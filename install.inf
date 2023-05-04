@@ -1,0 +1,21 @@
+[info]
+title=Scope Description
+desc=(Fill the description)
+type=cudatext-plugin
+subdir=cuda_scope_description
+homepage=(Fill the GitHub repo URL)
+
+[item1]
+section=events
+events=on_caret_slow,on_state~,on_tab_change,on_scroll
+
+
+[item2]
+section=commands
+caption=Scope Description\Toggle ON/OFF
+method=toggle_on_off_cmd
+
+[item3]
+section=commands
+caption=Scope Description\Toggle mode
+method=toggle_mode_cmd
