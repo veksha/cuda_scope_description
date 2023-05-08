@@ -117,7 +117,7 @@ class Command:
     def create_panel(self, ed_self, line, text, offset_x=0, offset_y=0):
         cell = ed_self.get_prop(PROP_CELL_SIZE)
         font = ed_self.get_prop(PROP_FONT)
-        font_scale = ed_self.get_prop(PROP_SCALE_FONT)
+        font_scale = ed_self.get_prop(PROP_SCALE_FONT) or 100
         
         first_col = ed_self.convert(CONVERT_PIXELS_TO_CARET, 0, 0)
         if first_col:
